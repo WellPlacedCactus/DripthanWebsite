@@ -4,6 +4,7 @@
   padding: 0;
   font-family: sans-serif;
   color: white;
+  transition: 0.5s;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     to bottom right,
     rgba(0, 0, 0, 0.25),
     rgba(0, 0, 0, 0.90)
-  ), url(./images/church.jpg);
+  ), url(../images/church.jpg);
   background-position: 55% 55%;
 }
 
@@ -26,7 +27,7 @@ body {
   margin: 0 auto;
   padding: 25px 0;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   border-bottom: 1px solid white;
 }
 
@@ -45,7 +46,6 @@ body {
   position: absolute;
   left: 0px;
   bottom: -10px;
-  transition: 0.5s;
 }
 
 .navbar ul li:hover::after {
@@ -56,38 +56,4 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
-}
-
-.content {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: left;
-}
-
-.title {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.title h1 {
-  font-weight: 100;
-  font-size: 150px;
-  font-style: italic;
-}
-
-.title h2 {
-  font-weight: normal;
-  font-size: 50px;
-  text-align: center;
-  font-family: monospace;
-}
-
-canvas {
-  z-index: none;
-  pointer-events: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
 }

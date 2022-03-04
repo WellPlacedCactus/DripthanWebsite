@@ -1,0 +1,60 @@
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 25vh 0 0 0;
+}
+
+.title h1 {
+  font-weight: 100;
+  font-size: 150px;
+  font-style: italic;
+  text-align: center;
+}
+
+.title h2 {
+  font-weight: normal;
+  font-size: 50px;
+  text-align: left;
+  font-family: monospace;
+}
+
+.title h3 {
+  font-weight: normal;
+  font-size: 50px;
+  text-align: left;
+  font-family: monospace;
+}
+
+.transparent {
+  color: transparent;
+}
+
+canvas {
+  z-index: none;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#transparent {
+  color: transparent;
+  border-color: transparent;
+}
+
+#drip {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.10),
+    rgba(0, 0, 0, 0.25)
+  ), url(../images/church.jpg);
+  background-position: 55% 50%;
+}
+
+#canvasdrip {
+  opacity: 0;
+}
